@@ -12,10 +12,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: blog_development
+  database: junipers_development
   pool: 5
-  username: root
-  password:
+  username: junipers
+  password: junipers
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
