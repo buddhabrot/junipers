@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app>
 <head>
   <title>Blog</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
@@ -8,7 +8,10 @@
 </head>
 <body>
 
-<%= yield %>
+  <%= yield %>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.1.5/angular-resource.min.js"></script>
+  <%= javascript_include_tag "application" %>
 
 </body>
 </html>

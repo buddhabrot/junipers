@@ -1,4 +1,10 @@
 Blog::Application.routes.draw do
+  scope :api do
+    get "/screencasts(.:format)" => "screencasts#index"
+    get "/screencasts/:id(.:format)" => "screencasts#show"
+  end
+  root to: "home#index"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
