@@ -1,4 +1,6 @@
 Blog::Application.routes.draw do
+  devise_for :users
+
   scope :api do
     get "/screencasts(.:format)" => "screencasts#index"
     get "/screencasts/:id(.:format)" => "screencasts#show"
